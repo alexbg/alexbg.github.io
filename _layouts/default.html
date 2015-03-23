@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <main class="container">
+
+      <section id="mine" class="row">
+        {% include info.html %}
+
+
+      <article class="small-9 columns">
+        {{ content }}
+      </article>
+
+    </section>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
