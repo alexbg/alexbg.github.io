@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h1>{{ site.data.projects.games.title }}</h1>
+
+{% for game in site.data.projects.games.info %}
+  <ul class="pricing-table">
+    <li class="title">{{ game.title }}</li>
+    <li class="description">{{ game.description }}</li>
+    {% if game.web %}
+      <li class="bullet-item"><a href= {{ game.web }}>Web</a></li>
+    {% endif %}
+    <li class="bullet-item"><a href= {{ game.engine[0].web }}>{{ game.engine[0].title }}</a></li>
+    {% if game.github %}
+      <li class="bullet-item"><a href= {{ game.github }}>GitHub</a></li>
+    {% endif %}
+  </ul>
+{% endfor %}

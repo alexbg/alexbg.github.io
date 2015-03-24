@@ -1,0 +1,27 @@
+---
+studies:
+    title: Estudios
+    info:
+      - name: Formación Profesional Grado Medio
+        style: Informática
+
+      - name: Formación Profesional Grado Superior
+        style: Desarrollo Web
+
+
+experience:
+    title: Experiencia
+    info:
+      - name: CARTRONIC NETWORKING
+        style: Técnico informático
+        agreement: Becario / Prácticas
+
+      - name: Vivocom EU
+        style: Programador web
+        agreement: Becario / Prácticas
+
+languages:
+    title: Idiomas
+    info:
+      - name: Ingles
+        level: Medio
