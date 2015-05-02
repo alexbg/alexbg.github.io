@@ -4,16 +4,28 @@ layout: default
 
 <h1>{{ site.data.projects.games.title }}</h1>
 
+<article class="uk-article">
+
 {% for game in site.data.projects.games.info %}
-  <ul class="pricing-table">
-    <li class="title">{{ game.title }}</li>
-    <li class="description">{{ game.description }}</li>
-    {% if game.web %}
-      <li class="bullet-item"><a href= {{ game.web }}>Web</a></li>
-    {% endif %}
-    <li class="bullet-item"><a href= {{ game.engine[0].web }}>{{ game.engine[0].title }}</a></li>
-    {% if game.github %}
-      <li class="bullet-item"><a href= {{ game.github }}>GitHub</a></li>
-    {% endif %}
-  </ul>
+
+    <h2 class="bg-title-article uk-article-title">{{ game.title }}</h2>
+    <p class="uk-article-meta">{{ game.state }}</p>
+    <p class="uk-article-lead">{{ game.description }}</p>
+    <dl class="uk-description-list-line">
+
+      {% if game.web %}
+        <dt>Webs:</dt>
+        <dd class="bullet-item"><a href= {{ game.web }}>Web</a></dd>
+      {% endif %}
+        <dt>Game Engine:</dt>
+        <dd class="bullet-item"><a href= {{ game.engine[0].web }}>{{ game.engine[0].title }}</a></dd>
+      {% if game.github %}
+        <dt>Code:</dt>
+        <dd class="bullet-item"><a href= {{ game.github }}>GitHub</a></dd>
+      {% endif %}
+      
+    </dl>
+
 {% endfor %}
+
+</article>

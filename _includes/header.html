@@ -1,20 +1,21 @@
-<header class="site-header">
-  <div class="fixed contain-to-grid">
-    <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="/index.html">AlexBG</a></h1>
-        </li>
-         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+<nav class="uk-navbar bg-nav">
+  <div class="uk-container uk-container-center">
+      <!-- Small screen -->
+      <a href="#off-menu" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+      <a href="/index.html" class="uk-navbar-brand uk-visible-small uk-navbar-center">AlexBG</a>
+      <!-- Large screen -->
+      <a href="/index.html" class="uk-navbar-brand uk-hidden-small">AlexBG</a>
+      <ul class="uk-navbar-nav bg-navbar-nav uk-hidden-small">
+        <li><a href="/projects">Proyectos</a></li>
       </ul>
-
-      <section class="top-bar-section">
-        <!-- Left Nav Section -->
-        <ul class="left">
-          <li><a href="/projects">Proyectos</a></li>
-        </ul>
-      </section>
-    </nav>
   </div>
-</header>
+</nav>
+
+<div id="off-menu" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+      <ul class="uk-nav uk-nav-offcanvas uk-nav-side">
+        <li class="uk-parent"><a href="/index.html">Index</a></li>
+        <li class="uk-parent"><a href="/projects">Proyectos</a></li>
+      </ul>
+    </div>
+</div>

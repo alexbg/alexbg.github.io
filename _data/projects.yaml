@@ -1,11 +1,29 @@
 ---
 games:
-  title: Games
+  title: Juegos
   info:
     - title: Cross Road
       description: "Usted tiene que ir por unos pasillos evitando las trampas y tu unica mision es llegar al final. Las trampas se activan cuando pasas por encima de un botón."
       web: http://gamejolt.com/games/action/crossroad/49411/
       engine:
-        - title: Unity3d
+        - title: Unity 3D
           web: http://Unity3d.com
       github: https://github.com/alexbg/CrossRoad
+      state: Terminado
+
+
+    - title: MicroFun
+      description: "Hay diferentes minijuegos, cuanto mas juegues mas dinero ganaras, y podras desbloquear mas juegos."
+      web: https://play.google.com/store/apps/details?id=com.Alexbg.MicroFun
+      engine:
+        - title: Unity 3D
+          web: http://Unity3d.com
+      state: Terminado
+
+    - title: Broke the box
+      description: "Salen diferentes cajas y tienes que romperlas tocando la pantalla. Cada vez que rompes una caja puedes ganar dinero, y con ese dinero mejoras las habilidades y los objetos que puedes usar
+      en la partida."
+      engine:
+        - title: Unity 3D
+          web: http://Unity3d.com
+      state: En desarrollo

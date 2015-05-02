@@ -6,20 +6,33 @@
   <body>
 
     {% include header.html %}
+    <div class="uk-margin-top">
+      <main class="uk-container uk-container-center">
 
-    <main class="container">
+          <aside class="uk-grid">
+            <!-- Muestro la informacion de mi perfil. Es un include y esta en default -->
+            <div class="uk-width-1-1">
+              <div class="uk-alert uk-alert-success" data-uk-alert>
+                <a href="" class="uk-alert-close uk-close"></a>
+                <p>STILL UNDER CONSTRUCTION</p>
+              </div>
+            </div>
+          </aside>
 
-      <section id="mine" class="row">
-        {% include info.html %}
+          <section id="mine" class="uk-grid">
 
+            <abside class="uk-width-large-2-10 uk-width-small-1-1">
+              {% include info.html %}
+            </abside>
 
-      <article class="small-12 large-9 columns">
-        {{ content }}
-      </article>
+            <article class="uk-width-large-8-10 uk-width-small-1-1">
+              {{ content }}
+            </article>
 
-    </section>
-    </main>
+          </section>
 
+      </main>
+    </div>
     {% include footer.html %}
 
   </body>

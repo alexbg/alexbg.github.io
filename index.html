@@ -4,27 +4,31 @@ layout: default
 
 <h1>{{ site.data.curriculum.studies.title }}</h1>
 
-{% for studies in site.data.curriculum.studies.info %}
-  <ul class="pricing-table">
-    <li class="title">{{ studies.name }}</li>
-    <li class="price">{{ studies.style }}</li>
-  </ul>
-{% endfor %}
+<article class="uk-article">
+  {% for studies in site.data.curriculum.studies.info %}
+    <h2 class="bg-article-title uk-article-title">{{ studies.name }}</h2>
+    <p class="uk-article-lead">{{ studies.style }}</p>
+    <hr class="uk-article-divider">
+  {% endfor %}
+</article>
+
 
 <h1>{{ site.data.curriculum.experience.title }}</h1>
 
-{% for experience in site.data.curriculum.experience.info %}
-<ul class="pricing-table">
-  <li class="title">{{ experience.name }}</li>
-  <li class="price">{{ experience.style }}</li>
-</ul>
-{% endfor %}
+<article class="uk-article">
+  {% for experience in site.data.curriculum.experience.info %}
+    <h2 class="bg-article-title uk-article-title">{{ experience.name }}</h2>
+    <p class="price">{{ experience.style }}</p>
+    <hr class="uk-article-divider">
+  {% endfor %}
+</article>
 
 <h1>{{ site.data.curriculum.languages.title }}</h1>
 
-{% for language in site.data.curriculum.languages.info %}
-<ul class="pricing-table">
-  <li class="title">{{ language.name }}</li>
-  <li class="price">{{ language.level }}</li>
-</ul>
-{% endfor %}
+<article class="uk-article">
+  {% for language in site.data.curriculum.languages.info %}
+    <h2 class="bg-article-title uk-article-title">{{ language.name }}</h2>
+    <p class="price">{{ language.level }}</p>
+    <hr class="uk-article-divider">
+  {% endfor %}
+</article>
