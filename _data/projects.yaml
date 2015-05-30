@@ -20,9 +20,18 @@ games:
           web: http://Unity3d.com
       state: Terminado
 
-    - title: Broke the box
+    - title: Destroy the box
       description: "Salen diferentes cajas y tienes que romperlas tocando la pantalla. Cada vez que rompes una caja puedes ganar dinero, y con ese dinero mejoras las habilidades y los objetos que puedes usar
       en la partida."
+      web: https://play.google.com/store/apps/details?id=com.Alexbg.DestroyTheBox&hl=es
+      engine:
+        - title: Unity 3D
+          web: http://Unity3d.com
+      state: Terminado
+
+    - title: Best Jump
+      description: "Basicamente mediante un salto, tienes que conseguir caer lo mas cerca de la plataforma"
+      web: http://www.indiedb.com/games/best-jump
       engine:
         - title: Unity 3D
           web: http://Unity3d.com
