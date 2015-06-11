@@ -2,30 +2,43 @@
 layout: default
 ---
 
-<h1>{{ site.data.projects.games.title }}</h1>
+<div class="uk-accordion" data-uk-accordion>
 
-<article class="uk-article">
+    <h3 class="uk-accordion-title">Juegos</h3>
+    <div class="uk-accordion-content">
+      <div class="uk-grid uk-grid-match" data-uk-grid-match>
+        {% for game in site.data.projects.games.info %}
 
-{% for game in site.data.projects.games.info %}
+          <div class="uk-width-large-1-2">
+            <figure class="uk-thumbnail uk-margin-small-bottom">
+              <img src={{ game.thumbnail }} alt="Imagen juego" class="uk-align-center img-medium">
+              <div class="uk-thumbnail-caption">
 
-    <h2 class="bg-title-article uk-article-title">{{ game.title }}</h2>
-    <p class="uk-article-meta">{{ game.state }}</p>
-    <p class="uk-article-lead">{{ game.description }}</p>
-    <dl class="uk-description-list-line">
+                <h2 class="">{{ game.title }}</h2>
+                <p class="">{{ game.state }}</p>
+                <p class="">{{ game.description }}</p>
+                <dl class="uk-description-list-line">
 
-      {% if game.web %}
-        <dt>Webs:</dt>
-        <dd class="bullet-item"><a href= {{ game.web }}>Web</a></dd>
-      {% endif %}
-        <dt>Game Engine:</dt>
-        <dd class="bullet-item"><a href= {{ game.engine[0].web }}>{{ game.engine[0].title }}</a></dd>
-      {% if game.github %}
-        <dt>Code:</dt>
-        <dd class="bullet-item"><a href= {{ game.github }}>GitHub</a></dd>
-      {% endif %}
+                  {% if game.web %}
+                    <dt>Webs:</dt>
+                    <dd class="bullet-item"><a href= {{ game.web }}>Web</a></dd>
+                  {% endif %}
+                    <dt>Game Engine:</dt>
+                    <dd class="bullet-item"><a href= {{ game.engine[0].web }}>{{ game.engine[0].title }}</a></dd>
+                  {% if game.github %}
+                    <dt>Code:</dt>
+                    <dd class="bullet-item"><a href= {{ game.github }}>GitHub</a></dd>
+                  {% endif %}
 
-    </dl>
+                </dl>
+              </div>
+            </figure>
+          </div>
 
-{% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+    <h3 class="uk-accordion-title">Contenido</h3>
+    <div class="uk-accordion-content">Contenido</div>
 
-</article>
+</div>

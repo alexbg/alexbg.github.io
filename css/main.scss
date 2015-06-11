@@ -16,11 +16,24 @@
   font-size: 26px;
 }
 
-.bg-navbar-nav>li>a{
+.bg-navbar-nav>li>a, .uk-navbar-brand{
   color:#666;
+  text-shadow: none;
 }
 
-.bg-navbar-nav>li>a:hover{
+.bg-navbar-nav>li>a:hover, .uk-navbar-brand:hover{
   background:none;
   color:white;
+}
+
+.img-small{
+  height: 100px;
+}
+
+.img-medium{
+  height: 200px;
+}
+
+.img-large{
+  height: 300px;
 }

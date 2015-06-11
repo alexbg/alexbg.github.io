@@ -10,6 +10,7 @@ games:
           web: http://Unity3d.com
       github: https://github.com/alexbg/CrossRoad
       state: Terminado
+      thumbnail: http://i.gjcdn.net/imgserver/game-header/950/49411_tsfk5mc7.jpg
 
 
     - title: MicroFun
@@ -19,6 +20,7 @@ games:
         - title: Unity 3D
           web: http://Unity3d.com
       state: Terminado
+      thumbnail: https://lh3.googleusercontent.com/HShHMiTlpnvO2se3Gmd1kC0_3rtSLeWUwvZNdaFMu2a_ZomSv9MhqijGbWAH3w6lFw=w300-rw
 
     - title: Destroy the box
       description: "Salen diferentes cajas y tienes que romperlas tocando la pantalla. Cada vez que rompes una caja puedes ganar dinero, y con ese dinero mejoras las habilidades y los objetos que puedes usar
@@ -28,6 +30,7 @@ games:
         - title: Unity 3D
           web: http://Unity3d.com
       state: Terminado
+      thumbnail: https://lh3.googleusercontent.com/hcw-K7gLfoGpYlAhA0GHofXykAkVL2CHUZ4jq9gLAl6RH9BxPBCKBMNFSf_o1KYBqpzR=w300-rw
 
     - title: Best Jump
       description: "Basicamente mediante un salto, tienes que conseguir caer lo mas cerca de la plataforma"
@@ -36,3 +39,4 @@ games:
         - title: Unity 3D
           web: http://Unity3d.com
       state: En desarrollo
+      thumbnail: http://media.indiedb.com/cache/images/games/1/42/41466/thumb_620x2000/Levels.png
