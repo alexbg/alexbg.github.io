@@ -1,0 +1,114 @@
+- name: Front End Developer
+  company: Indra
+  dates: Oct. 2018 - Dic. 2020 
+  info: 
+    - Creating and changing features following clients directives for Oysho.
+    - Small tasks like improve performance on some webpages, make demos for presentations to clients, estimate development time for django projects.
+  technologies: 
+    - node
+    - express
+    - jquery
+    - django
+    - angular
+  version_control: git
+
+- name: Web Developer
+  company: Grove Capital Management
+  dates: Mar. 2018 - Oct. 2018 
+  info: 
+    - Creating and changing features following clients directives.
+    - Data entry of client-provided data.
+    - Creating new processes for data entry.
+  technologies: 
+    - Apache
+    - php
+    - css
+    - MySQL
+    - C#
+    - git
+    - jenkins
+  version_control: git
+
+- name: Web Developer
+  company: Brooktec
+  dates: abr. 2017 - ene. 2018 
+  info: 
+    - Creating and modifying features in many projects with different technologies.
+    - Modifying the web interface.
+    - Dynamic components with react and angular 2.
+    - Integration of stripe for payment method (stripe).
+  technologies: 
+    - react
+    - redux
+    - angular 
+    - zend framework 
+    - webpack 
+    - mysql 
+    - postgresql
+    - symfony
+    - git
+    - sass
+    - less
+    - twig 
+    - gulp
+    - vagrant
+  version_control: git
+
+- name: Web Developer
+  company: Grupo V
+  dates: abr. 2016 - sept. 2016 
+  info: 
+    - Creating and modifying features.
+    - Modifying the web interface.
+    - Modifying Wordpress plugins.
+    - Maintenance of linux servers.
+  technologies: 
+    - sass
+    - gulp
+    - nodejs
+    - wordpress
+    - php
+    - javascript
+    - npm
+    - bower
+    - apache
+  version_control: git
+
+- name: Programmer Analyst
+  company: Talentum startups
+  dates: jul. 2014 - oct. 2014 
+  info: 
+    - Talentum Startups grant.
+    - Web development and analysis.
+    - Web interface using Bootstrap.
+    - UML diagrams.
+    - Entity-relationship diagrams using MySQL.
+    - Communications between servers using socket.io
+  technologies: 
+    - sass
+    - gulp
+    - nodejs
+    - play framework
+    - socket.io
+    - bootstrap
+    - jquery
+    - mysql
+    - akka
+  version_control: git
+
+- name: Web Developer
+  company: vivocom
+  dates: abr. 2014 - jun. 2014 
+  info: 
+    - Development and maintenance of the Pre-Bank platform Keepunto.
+    - Creation of graphics using javascript libraries.
+  technologies: 
+    - yii framework
+    - php
+    - mysql
+    - javascript
+    - selenium
+    - composer
+    - npm
+    - bower
+  version_control: git

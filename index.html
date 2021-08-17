@@ -1,0 +1,59 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+<div class='row'>
+  <div class='col-12 col-md-3 mb-5'>
+    <div class="card p-0">
+      <figure class="figure position-relative m-0">
+        <img src='assets/img/alexbg_crop.jpeg' class='img-fluid'></img>
+        <figcaption class="figure-caption position-absolute bottom-0 w-100 p-2 text-center bg-dark text-white fw-bolder" style="--bs-bg-opacity: .3;">
+          Alejandro Barata Gonzalez
+        </figcaption>
+      </figure>
+      <ul class='list-group list-group-flush'>
+        {% for user in site.data.alexbg %}
+          <a href='{{ user.linkedin }}' class='list-group-item list-group-item-action fw-bolder' target="_blank">
+            Linkedin
+          </a>
+          <a href='{{ user.github }}' class='list-group-item list-group-item-action fw-bolder' target="_blank">
+            Github
+          </a>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class='col-12 col-md-9'>
+    {% for work in site.data.works %}
+    <div class="card card-border">
+      <div class="card-header lead">
+        {{ work.company }}
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">
+          <figure>
+            <blockquote class="blockquote">
+              <p>{{ work.name }}</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              {{ work.dates }}
+            </figcaption>
+          </figure>
+        </h5>
+        <p class="card-text">
+          {% for info in work.info %}
+            <p>{{ info }}</p>
+          {% endfor %}
+        </p>
+      </div>
+      <div class="card-footer text-muted">
+        {% for tech in work.technologies %}
+          <span class="badge rounded-pill bg-orange">{{ tech }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
