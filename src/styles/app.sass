@@ -1,0 +1,45 @@
+// IMPORTS
+@use './colors'
+
+// BASIC
+html, body
+  // height: 100%
+  background-color: colors.$background-light
+  font-family: "Noto Sans JP", sans-serif
+  font-size: 1.1rem
+  font-weight: 300
+#root
+  display: flex
+  flex-direction: column
+  position: relative
+
+.container
+  max-width: 732px
+  margin: auto
+  padding: 0 1rem
+  flex: 1
+  box-sizing: border-box
+
+a
+  color: colors.$link
+  text-decoration: none
+
+// ARTICLE
+article
+  h1
+    text-decoration-line: underline
+    text-decoration-color: colors.$complementary
+  p
+    line-height: 1.7
+
+// FOOTER
+footer
+  padding: 2rem 0
+  background-color: colors.$background
+  color: white
+  ul
+    list-style: none
+    display: flex
+    justify-content: space-between
+  a
+    color: colors.$link-light
