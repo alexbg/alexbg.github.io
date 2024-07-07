@@ -1,4 +1,4 @@
-import { ReactElement, memo } from 'react';
+import { ReactElement } from 'react';
 import IconComponent from './icon-component';
 import React from 'react';
 
@@ -35,12 +35,12 @@ const MenuComponent = (props: IProps) => {
         <span className="pure-menu-heading">Alexbg</span>
         <ul className="pure-menu-list">
             <li className="pure-menu-item">
-                <a href="https://github.com/alexbg" className="pure-menu-link" target='_blank'>
+                <a href="https://github.com/alexbg" className="pure-menu-link" target='_blank' rel="noreferrer">
                   Github
                 </a>
             </li>
             <li className="pure-menu-item">
-                <a href="https://www.linkedin.com/in/alejandro-barata-b15576100" className="pure-menu-link" target='_blank'>
+                <a href="https://www.linkedin.com/in/alejandro-barata-b15576100" className="pure-menu-link" target='_blank' rel="noreferrer">
                   Linkedin
                 </a>
             </li>

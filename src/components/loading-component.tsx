@@ -1,7 +1,5 @@
 import { CSSProperties, memo } from 'react';
 
-interface IProps {}
-
 const LoadingComponent = memo(() => {
   const style: CSSProperties = {
     textAlign: 'center',
@@ -9,7 +7,7 @@ const LoadingComponent = memo(() => {
     height: '10px',
     top: '50%',
     width: '0',
-    backgroundColor: 'red',
+    backgroundColor: '#EF233C',
     borderRadius: '10px',
     left: '50%',
     transform: 'translateX(calc(50%))',

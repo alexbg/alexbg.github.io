@@ -2,12 +2,11 @@ import React from 'react';
 import LanguageComponent from './components/language-component';
 import MenuComponent from './components/menu-component';
 import i18next from 'i18next';
-import { Trans } from 'react-i18next';
 import LoadingComponent from './components/loading-component';
 
 
 function App() {
-  const [language, setLanguage] = React.useState<string>();
+  const [, setLanguage] = React.useState<string>();
   const [isReady, setIsReady] = React.useState(false);
   React.useEffect(() => {
     document.fonts.load("1px Noto" ?? "1px Noto Sans JP").then(() => setIsReady(true));
@@ -25,11 +24,6 @@ function App() {
       <main className='container pure-g'>
         <article className='pure-u-5-5'>
           <h1>{i18next.t('title', {ns: 'summary'})}</h1>
-          {/* <p><Trans
-            i18nKey='content'
-            components={{ linkoysho: <a href='https://www.oysho.com/' target='_blank'/>, linksantander: <a href='https://www.santander.com/' target='_blank'/>}}
-            ns='summary'
-          /></p> */}
           {i18next.t('content', {ns: 'summary'})}
         </article>
         <article className='pure-u-5-5'>
@@ -76,7 +70,7 @@ function App() {
       </main>
       <footer>
         <ul className='container'>
-          <a href='#' target='_blank'>Changelog</a>
+          <li><a href='https://github.com/alexbg/alexbg.github.io/blob/main/CHANGELOG.md' target='_blank' rel="noreferrer">Changelog</a></li>
           <li>v0.0.1</li>
         </ul>
       </footer>
