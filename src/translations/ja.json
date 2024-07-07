@@ -1,10 +1,13 @@
 {
   "summary": {
     "title": "総括",
-    "content": "I am a Full Stack Web Developer, I have been working on websites, desktop apps and mobile apps, I like to learn in my job and in my free time, also I like to work on diverse teams. I have worked for on webs like <linkoysho>Oysho</linkoysho>, internal apps for <linksantander>Santander</linksantander>"
+    "content": "私はソフトウェアエンジニアです、特別ReactやReduxを使うフロント エンド ウェブ です。DjangoやLaravelや関係データベースやNoSQLデータベースを使うバック エンド ウェブの知見もあります。そして、デスクトップのアプリをElectronやTauriでつかわれる経験があります。身につけ続けたくて世界中の人と働きたいです。"
   },
   "technologies": {
-    "title": "技術"
+    "title": "技術",
+    "frontend": "フロント エンド",
+    "backend": "バック エンド",
+    "database": "データベース"
   },
   "projects": {
     "title": "プロジェクト"

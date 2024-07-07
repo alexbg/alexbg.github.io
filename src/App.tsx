@@ -3,10 +3,18 @@ import LanguageComponent from './components/language-component';
 import MenuComponent from './components/menu-component';
 import i18next from 'i18next';
 import { Trans } from 'react-i18next';
+import LoadingComponent from './components/loading-component';
 
 
 function App() {
   const [language, setLanguage] = React.useState<string>();
+  const [isReady, setIsReady] = React.useState(false);
+  React.useEffect(() => {
+    document.fonts.load("1px Noto" ?? "1px Noto Sans JP").then(() => setIsReady(true));
+  }, []);
+  if (!isReady) {
+    return <LoadingComponent />
+  }
   return (
     <>
       <header>
@@ -17,18 +25,18 @@ function App() {
       <main className='container pure-g'>
         <article className='pure-u-5-5'>
           <h1>{i18next.t('title', {ns: 'summary'})}</h1>
-          {/* <p>{i18next.t('content', {ns: 'summary'})}</p> */}
-          <p><Trans
+          {/* <p><Trans
             i18nKey='content'
             components={{ linkoysho: <a href='https://www.oysho.com/' target='_blank'/>, linksantander: <a href='https://www.santander.com/' target='_blank'/>}}
             ns='summary'
-          /></p>
+          /></p> */}
+          {i18next.t('content', {ns: 'summary'})}
         </article>
         <article className='pure-u-5-5'>
           <h1>{i18next.t('title', {ns: 'technologies'})}</h1>
           <div className='pure-g'>
-            <div className='pure-u-12-24'>
-              <h2>Frontend</h2>
+            <div className='pure-u-5-5 pure-u-sm-12-24'>
+              <h2>{i18next.t('frontend', {ns: 'technologies'})}</h2>
               <ul>
                 <li>Javascript</li>
                 <li>css</li>
@@ -39,8 +47,8 @@ function App() {
                 <li>Jquery</li>
               </ul>
             </div>
-            <div className='pure-u-12-24'>
-              <h2>Backend</h2>
+            <div className='pure-u-5-5 pure-u-sm-12-24'>
+              <h2>{i18next.t('backend', {ns: 'technologies'})}</h2>
               <ul>
                 <li>PHP</li>
                 <li>Java</li>
@@ -50,8 +58,8 @@ function App() {
                 <li>Laravel</li>
               </ul>
             </div>
-            <div className='pure-u-12-24'>
-            <h2>Database</h2>
+            <div className='pure-u-5-5 pure-u-sm-12-24'>
+            <h2>{i18next.t('database', {ns: 'technologies'})}</h2>
               <ul>
                 <li>SQL</li>
                 <li>NoSQL</li>
@@ -62,10 +70,9 @@ function App() {
             </div>
           </div>
         </article>
-        <article className='pure-u-5-5'>
+        {/* <article className='pure-u-5-5'>
           <h1>{i18next.t('title', {ns: 'projects'})}</h1>
-          {/* <p>{i18next.t('content', {ns: 'projects'})}</p> */}
-        </article>
+        </article> */}
       </main>
       <footer>
         <ul className='container'>

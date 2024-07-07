@@ -11,13 +11,48 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preload" href="%PUBLIC_URL%/NotoSansJP.ttf" as="font" type="font/ttf" crossorigin>
+    <style>
+      @font-face {
+        font-family: 'Noto';
+        src: url('%PUBLIC_URL%/NotoSansJP.ttf') format('truetype');
+        font-display: swap;
+      }
+    </style>
     <title>Alexbg</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <style>
+        @keyframes loading {
+          0% {
+            width: 0;
+            transform: translateX(50%);
+          }
+          50% {
+            width: 200px;
+            transform: translateX(calc(50% - 200px));
+          }
+          100% {
+            width: 0;
+            transform: translateX(50%);
+          }
+        }
+        #root>div {
+          text-align: center;
+          position: fixed;
+          height: 10px;
+          top: 50%;
+          width: 0;
+          background-color: red;
+          border-radius: 10px;
+          left: 50%;
+          transform: translateX(calc(50%));
+          animation: loading 2s linear infinite;
+        }
+        </style>
+        <div></div>
+    </div>
   </body>
 </html>

@@ -1,10 +1,13 @@
 {
   "summary": {
     "title": "Resumen",
-    "content": "I am a Full Stack Web Developer, I have been working on websites, desktop apps and mobile apps, I like to learn in my job and in my free time, also I like to work on diverse teams. I have worked for on webs like <linkoysho>Oysho</linkoysho>, internal apps for <linksantander>Santander</linksantander>"
+    "content": "I am a dedicated Full Stack Software Engineer specializing in frontend development with React and Redux. I have expertise in backend development using Django, Laravel, relational databases, and document-oriented databases. Additionally, I have experience developing desktop applications with Electron and Tauri. I am passionate about continuous learning and thrive in diverse team environments."
   },
   "technologies": {
-    "title": "Tecnologias"
+    "title": "Tecnologias",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Base de datos"
   },
   "projects": {
     "title": "Projectos"

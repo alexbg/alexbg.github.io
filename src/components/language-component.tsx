@@ -37,7 +37,7 @@ const LanguageComponent = memo((props: IProps) => {
         <select name='language' onChange={changeLanguage} id='language-selector'>
           <option value='en'>English</option>
           <option value='ja'>日本語</option>
-          <option value='es'>Espaniol</option>
+          <option value='es'>Español</option>
         </select>
       </div>
     </form>
