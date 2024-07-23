@@ -7,13 +7,7 @@ import LoadingComponent from './components/loading-component';
 
 function App() {
   const [, setLanguage] = React.useState<string>();
-  const [isReady, setIsReady] = React.useState(false);
-  React.useEffect(() => {
-    document.fonts.load("1px Noto" ?? "1px Noto Sans JP").then(() => setIsReady(true));
-  }, []);
-  if (!isReady) {
-    return <LoadingComponent />
-  }
+  const [isReady, setIsReady] = React.useState(true);
   return (
     <>
       <header>
