@@ -65,7 +65,7 @@ function App() {
       <footer>
         <ul className='container'>
           <li><a href='https://github.com/alexbg/alexbg.github.io/blob/main/CHANGELOG.md' target='_blank' rel="noreferrer">Changelog</a></li>
-          <li>v1.0.0</li>
+          <li>v1.0.1</li>
         </ul>
       </footer>
     </>
