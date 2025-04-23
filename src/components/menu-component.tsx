@@ -1,6 +1,7 @@
 import { ReactElement } from 'react';
 import IconComponent from './icon-component';
 import React from 'react';
+import i18next from 'i18next';
 
 interface IProps {
   extras?: ReactElement[];
@@ -42,6 +43,11 @@ const MenuComponent = (props: IProps) => {
             <li className="pure-menu-item">
                 <a href="https://www.linkedin.com/in/alejandro-barata-b15576100" className="pure-menu-link" target='_blank' rel="noreferrer">
                   Linkedin
+                </a>
+            </li>
+            <li className="pure-menu-item">
+                <a href="https://github.com/pyroxenestudio" className="pure-menu-link" target='_blank' rel="noreferrer">
+                  {i18next.t('title', {ns: 'projects'})}
                 </a>
             </li>
             {extrasComponents()}

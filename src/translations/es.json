@@ -1,15 +1,15 @@
 {
   "summary": {
     "title": "Resumen",
-    "content": "I am a dedicated Full Stack Software Engineer specializing in frontend development with React and Redux. I have expertise in backend development using Django, Laravel, relational databases, and document-oriented databases. Additionally, I have experience developing desktop applications with Electron and Tauri. I am passionate about continuous learning and thrive in diverse team environments."
+    "content": "Soy un desarrollador full stack especializado en Frontend con Reactjs con mas de 6 años de experiencia. Tengo experiencia en Backend usando Django, Laravel bases de datos relacionadas y bases de datos documental. También tengo experiencia en desarrollo de aplicaciones de escritorio con Electron y Tauri. Me apasiona el aprendizaje continuo y prosperar en entornos de equipo diversos."
   },
   "technologies": {
-    "title": "Tecnologias",
+    "title": "Tecnologías",
     "frontend": "Frontend",
     "backend": "Backend",
     "database": "Base de datos"
   },
   "projects": {
-    "title": "Projectos"
+    "title": "Proyectos"
   }
 }
